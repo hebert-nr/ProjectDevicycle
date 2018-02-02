@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.ham{
+    color:aqua;
+    background-color: #343a40;
+    padding:5px;
+    border-color: azure;
+}
+
+.ham a:hover{
+    background-color: #343a40;
+}
+
+.headLink {
+    color:white;
+    text-align: center;
+    overflow: hidden;
+    background-color: #343a40;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.headLink:hover{
+}
+
+#hdln{
+    text-align: center;
+    background-color: #343a40;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar-collapse{
+    background-color: #343a40;
+}
+
+#navbarNavDropdown{
+    background-color: #343a40;;
+}
+
+#navbarNavDropdown ul li a{
+    color:white;
+}
+
+#navbarNavDropdown ul li a:hover{
+    color:#00cdff;
+}

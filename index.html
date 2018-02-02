@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+    <title>Devicycle</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid col-md-12" style="text-align: center; z-index: 45;">
+        <img src="images/devicycle_small.png">
+    </div>
+    <div>
+        <nav class="navbar navbar-toggleable-md navbar-expand-md bg-dark navbar-dark sticky-top" id="navBack">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-justified w-100">
+                    <li class="nav-item headLink">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item headLink">
+                        <a class="nav-link" href="#">Buy Device</a>
+                    </li>
+                    <li class="nav-item headLink">
+                        <a class="nav-link" href="#">Sell Device</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown" id="hdln">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
+                        <div class="dropdown-menu ham" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item headLink" href="#">How it works</a>
+                            <a class="dropdown-item headLink" href="#">Recent Sales</a>
+                            <a class="dropdown-item headLink" href="#">Contact Us</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</body>
+<script>
+    jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 768) {
+      $('.nav-item').removeClass('headLink');
+    } else if (ww >= 769) {
+      $('.nav-item').addClass('headLink');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+
+</script>
+
+
+</html>
