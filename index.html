@@ -12,8 +12,14 @@
 </head>
 
 <body>
-    <div class="container-fluid col-md-12" style="text-align: center; z-index: 45;">
-        <img src="images/devicycle_small.png">
+    <div class="container-fluid col-md-12" style="text-align: center; z-index: 45; background-image: url(images/matrix.jpg);" >
+        <img src="images/devicycle_small2.png">
+    </div>
+    <div>
+        <div class="row">
+            <div class="col" style="background-color: grey;">&nbsp;</div>
+            <div class="col" style="background-color: darkgrey;">&nbsp;</div>
+        </div>
     </div>
     <div>
         <nav class="navbar navbar-toggleable-md navbar-expand-md bg-dark navbar-dark sticky-top" id="navBack">
@@ -45,24 +51,40 @@
             </div>
         </nav>
     </div>
+    <form style="background-color: #ccc;">
+        <div>
+            <div class="row">
+                <div class="col" style="background-color: grey;">&nbsp;</div>
+                <div class="col" style="background-color: darkgrey;">&nbsp;</div>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class=row>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </form>
 
 </body>
 <script>
     jQuery(document).ready(function($) {
-  var alterClass = function() {
-    var ww = document.body.clientWidth;
-    if (ww < 768) {
-      $('.nav-item').removeClass('headLink');
-    } else if (ww >= 769) {
-      $('.nav-item').addClass('headLink');
-    };
-  };
-  $(window).resize(function(){
-    alterClass();
-  });
-  //Fire it when the page first loads:
-  alterClass();
-});
+        var alterClass = function() {
+            var ww = document.body.clientWidth;
+            if (ww < 768) {
+                $('.nav-item').removeClass('headLink');
+            } else if (ww >= 769) {
+                $('.nav-item').addClass('headLink');
+            };
+        };
+        $(window).resize(function() {
+            alterClass();
+        });
+        //Fire it when the page first loads:
+        alterClass();
+    });
 
 </script>
 
