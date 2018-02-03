@@ -39,7 +39,7 @@
                         <a class="nav-link" href="#">Sell Device</a>
                     </li>
                     <!-- Dropdown -->
-                    <li class="nav-item dropdown" id="hdln">
+                    <li class="nav-item dropdown goaway" id="hdln">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
                         <div class="dropdown-menu ham" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item headLink" href="#">How it works</a>
@@ -51,7 +51,7 @@
             </div>
         </nav>
     </div>
-    <form style="background-color: #ccc;">
+    <form>
         <div>
             <div class="row">
                 <div class="col" style="background-color: grey;">&nbsp;</div>
@@ -75,9 +75,13 @@
             var ww = document.body.clientWidth;
             if (ww < 768) {
                 $('.nav-item').removeClass('headLink');
-            } else if (ww >= 769) {
+            } 
+            else if (ww >= 769) {
                 $('.nav-item').addClass('headLink');
+                $('.goaway').removeClass('headLink');
+                
             };
+            
         };
         $(window).resize(function() {
             alterClass();
