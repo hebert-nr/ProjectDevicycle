@@ -1,5 +1,12 @@
 body {
-    margin: 0;
+    margin: 1%;
+    margin-top:0;
+    background: #ccc;
+}
+
+.mainContain{ 
+    background: #343a40;
+    box-shadow: 0 -1px 20px #333;
 }
 
 .ham{
@@ -49,4 +56,10 @@ body {
 
 #navbarNavDropdown ul li a:hover{
     color:#00cdff;
+}
+
+.footStuff{
+    color:white;
+    text-align: center;
+    padding:12px 4px;
 }

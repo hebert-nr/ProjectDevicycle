@@ -12,62 +12,79 @@
 </head>
 
 <body>
-    <div class="container-fluid col-md-12" style="text-align: center; z-index: 45; height:270px; background-image: url(images/town.jpg); padding-top: 4%;" >
-        <img src="images/devicycle_small2.png">
-    </div>
-    <div>
-        <div class="row">
-            <div class="col" style="background-color: grey;">&nbsp;</div>
-            <div class="col" style="background-color: darkgrey;">&nbsp;</div>
-        </div>
-    </div>
-    <div>
-        <nav class="navbar navbar-toggleable-md navbar-expand-md bg-dark navbar-dark sticky-top" id="navBack">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Brand -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav nav-justified w-100">
-                    <li class="nav-item headLink">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item headLink">
-                        <a class="nav-link" href="#">Buy Device</a>
-                    </li>
-                    <li class="nav-item headLink">
-                        <a class="nav-link" href="#">Sell Device</a>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown goaway" id="hdln">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
-                        <div class="dropdown-menu ham" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item headLink" href="#">How it works</a>
-                            <a class="dropdown-item headLink" href="#">Recent Sales</a>
-                            <a class="dropdown-item headLink" href="#">Contact Us</a>
-                        </div>
-                    </li>
-                </ul>
+    <div class="container mainContain">
+        <div class="container-fluid col-md-12" style="text-align: center; z-index: 45; height:270px; background-image: url(images/town.jpg); background-repeat: no-repeat; padding-top: 4%;">
+                <img src="images/devicycle_small2.png">
             </div>
-        </nav>
-    </div>
-    <form>
-        <div>
-            <div class="row">
-                <div class="col" style="background-color: grey;">&nbsp;</div>
-                <div class="col" style="background-color: darkgrey;">&nbsp;</div>
-            </div>
-        </div>
-        <div>
-            <div class="container">
-                <div class=row>
-                    <div class="col"></div>
-                    <div class="col"></div>
+            <div>
+                <div class="row">
+                    <div class="col" style="background-color: grey;">&nbsp;</div>
+                    <div class="col" style="background-color: darkgrey;">&nbsp;</div>
                 </div>
             </div>
-        </div>
-    </form>
 
+            <nav class="navbar navbar-toggleable-md navbar-expand-md bg-dark navbar-dark sticky-top" id="navBack">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- Brand -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-justified w-100">
+                        <li class="nav-item headLink">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item headLink">
+                            <a class="nav-link" href="#">Buy Device</a>
+                        </li>
+                        <li class="nav-item headLink">
+                            <a class="nav-link" href="#">Sell Device</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown goaway" id="hdln">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
+                            <div class="dropdown-menu ham" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item headLink" href="#">How it works</a>
+                                <a class="dropdown-item headLink" href="#">Recent Sales</a>
+                                <a class="dropdown-item headLink" href="#">Contact Us</a>
+                                <a class="dropdown-item headLink" href="#">Admin</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div>
+                <div class="row">
+                    <div class="col" style="background-color: grey;">&nbsp;</div>
+                    <div class="col" style="background-color: darkgrey;">&nbsp;</div>
+                </div>
+            </div>
+        <div class="container-fluid">
+
+            
+            <div>
+                <div class="container">
+                    <div class=row>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center">
+                <img src="images/comingSoon.jpg" style="width:100%; padding:0; margin: 0;" />
+            </div>
+            <div style="text-align: center">
+                <img src="images/comingSoon.jpg" style="width:100%; padding:0; margin: 0;" />
+            </div>
+            <div style="text-align: center">
+                <img src="images/comingSoon.jpg" style="width:100%; padding:0; margin: 0;" />
+            </div>
+            <div class="footer footStuff">
+               Copyright © <span id="thedate"></span> Devicycle
+            </div>
+        </div>
+    </div>
 </body>
 <script>
     jQuery(document).ready(function($) {
@@ -75,13 +92,12 @@
             var ww = document.body.clientWidth;
             if (ww < 768) {
                 $('.nav-item').removeClass('headLink');
-            } 
-            else if (ww >= 769) {
+            } else if (ww >= 769) {
                 $('.nav-item').addClass('headLink');
                 $('.goaway').removeClass('headLink');
-                
+
             };
-            
+
         };
         $(window).resize(function() {
             alterClass();
@@ -89,6 +105,15 @@
         //Fire it when the page first loads:
         alterClass();
     });
+
+</script>
+
+<script>
+    window.onload = function() {
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("thedate").innerHTML = n;
+    }
 
 </script>
 
