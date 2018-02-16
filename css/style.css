@@ -63,3 +63,27 @@ body {
     text-align: center;
     padding:12px 4px;
 }
+
+.carousel-control-prev{
+    background:#00cdff;
+    opacity:.3;
+    background: linear-gradient(to right, #00cdff , transparent);
+}
+.carousel-control-prev:hover{
+    background:#00cdff;
+    opacity:.5;
+    background: linear-gradient(to right, #00cdff , transparent);
+}
+
+.carousel-control-next{
+    background:#00cdff;
+    opacity:.3;
+    background: linear-gradient(to right, transparent, #00cdff);
+}
+
+.carousel-control-next:hover{
+    background:#00cdff;
+    opacity:.5;
+    background: linear-gradient(to right, transparent, #00cdff );
+}
+
