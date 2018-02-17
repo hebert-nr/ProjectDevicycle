@@ -69,6 +69,11 @@ a.hover{
     padding:12px 4px;
 }
 
+.mainArea{
+    padding:5%;
+    background: #eee;
+}
+
 .carousel-control-prev{
     background:#00cdff;
     opacity:.3;
@@ -90,9 +95,6 @@ a.hover{
     background:#00cdff;
     opacity:.5;
     background: linear-gradient(to right, transparent, #eee );
-}
-carousel-control-prev-icon{
- color:aqua;   
 }
 
 
