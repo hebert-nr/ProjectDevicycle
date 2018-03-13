@@ -1,0 +1,11 @@
+C:\Code\1Core\Timber\Timber\bin\Debug\netcoreapp2.0\Timber.deps.json
+C:\Code\1Core\Timber\Timber\bin\Debug\netcoreapp2.0\Timber.runtimeconfig.json
+C:\Code\1Core\Timber\Timber\bin\Debug\netcoreapp2.0\Timber.runtimeconfig.dev.json
+C:\Code\1Core\Timber\Timber\bin\Debug\netcoreapp2.0\Timber.dll
+C:\Code\1Core\Timber\Timber\bin\Debug\netcoreapp2.0\Timber.pdb
+C:\Code\1Core\Timber\Timber\obj\Debug\netcoreapp2.0\Timber.csprojResolveAssemblyReference.cache
+C:\Code\1Core\Timber\Timber\obj\Debug\netcoreapp2.0\Timber.csproj.CoreCompileInputs.cache
+C:\Code\1Core\Timber\Timber\obj\Debug\netcoreapp2.0\Timber.AssemblyInfoInputs.cache
+C:\Code\1Core\Timber\Timber\obj\Debug\netcoreapp2.0\Timber.AssemblyInfo.cs
+C:\Code\1Core\Timber\Timber\obj\Debug\netcoreapp2.0\Timber.dll
+C:\Code\1Core\Timber\Timber\obj\Debug\netcoreapp2.0\Timber.pdb
