@@ -7,7 +7,7 @@ elements to be implemented into devicycleinc.com
 
 1. Blog
 2. Facebook messenger 
-3. Facebook pixel
+3. Facebook pixel - Advertising
 4. Pricing Database (what I pay for phones)
 5. EveryMac API (search used for apple computer lookups)
 6. Save api search info from everymac 
